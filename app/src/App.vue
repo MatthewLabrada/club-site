@@ -5,6 +5,7 @@ import KnightOne from "./components/KnightOne.vue";
 import KnightTwo from "./components/KnightTwo.vue";
 import AboutOne from "./components/AboutOne.vue";
 import AboutTwo from "./components/AboutTwo.vue";
+import ScrollButton from "./components/ScrollButton.vue";
 </script>
 
 <template>
@@ -16,7 +17,8 @@ import AboutTwo from "./components/AboutTwo.vue";
       </h1>
       <KnightOne class="logo w-[80vw] h-[80vh] md:w-[55vw] md:h-[55vh] lg:w-[80vw] lg:h-[80vh] object-contain mx-auto"/>
     </div>
-    <div class="section min-h-screen">
+    <ScrollButton targetId="KnightTwo" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">Scroll</ScrollButton>
+    <div id="KnightTwo" class="section min-h-screen">
       <KnightTwo />
     </div>
     <div class="section min-h-screen">
